@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/helmate-test-project/static/css/main.4a71927b.css",
+    "main.js": "/helmate-test-project/static/js/main.e10fe068.js",
+    "index.html": "/helmate-test-project/index.html",
+    "main.4a71927b.css.map": "/helmate-test-project/static/css/main.4a71927b.css.map",
+    "main.e10fe068.js.map": "/helmate-test-project/static/js/main.e10fe068.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a71927b.css",
+    "static/js/main.e10fe068.js"
+  ]
+}
