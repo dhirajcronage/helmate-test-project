@@ -1,14 +1,32 @@
 import React from 'react';
-import './Card.css'; 
+import { Helmet } from 'react-helmet-async';
+import './Card.css';
 
-function Card({ title, imageUrl, description }) {
+function Card({ title, imageUrl, description, onButtonClick, link }) {
   return (
     <div className="card">
+      <Helmet>
+        <title>{title} - Learn More</title>
+        <meta name="description" content={description} />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={imageUrl} />
+        <meta property="og:url" content={link} />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={imageUrl} />
+      </Helmet>
+
       <img src={imageUrl} alt={title} className="card-image" />
-      <div className="card-info">
-        <h3 className="card-title">{title}</h3>
-        <p className="card-description">{description}</p>
-      </div>
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <button className="card-button" onClick={onButtonClick}>Click Me</button>
     </div>
   );
 }
