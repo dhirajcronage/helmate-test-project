@@ -9,6 +9,7 @@ function Message() {
   const { title, message } = location.state || {};
 
   // Default image for sharing if no fruit is selected
+  // Default image for sharing if no fruit is selected
   const imageMap = {
     "Orange": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Oranges_-_whole-halved-segment.jpg",
     "Apple": "https://assets.clevelandclinic.org/transform/cd71f4bd-81d4-45d8-a450-74df78e4477a/Apples-184940975-770x533-1_jpg",
